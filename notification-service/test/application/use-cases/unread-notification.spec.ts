@@ -1,7 +1,7 @@
 import { InMemoryNotificationsRepository } from '@test/repositories/in-memory-notifications-repository';
-import { NotificationNotFoundError } from './errors/notification-not-found-error';
-import { makeNotification } from '@test/factories/notification-factory';
-import { UnreadNotification } from './unread-notification';
+import { NotificationNotFoundError } from '@application/use-cases/errors/notification-not-found-error';
+import { makeNotification } from '@factories/notification-factory';
+import { UnreadNotification } from '@application/use-cases/unread-notification';
 
 describe('Unread notification', () => {
    it('should be able to Unread a notification', async () => {

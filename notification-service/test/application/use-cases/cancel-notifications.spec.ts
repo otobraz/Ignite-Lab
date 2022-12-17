@@ -1,7 +1,7 @@
 import { InMemoryNotificationsRepository } from '@test/repositories/in-memory-notifications-repository';
-import { CancelNotification } from './cancel-notification';
-import { NotificationNotFoundError } from './errors/notification-not-found-error';
-import { makeNotification } from '@test/factories/notification-factory';
+import { CancelNotification } from '@application/use-cases/cancel-notification';
+import { NotificationNotFoundError } from '@application/use-cases/errors/notification-not-found-error';
+import { makeNotification } from '@factories/notification-factory';
 
 describe('Cancel notification', () => {
    it('should be able to cancel a notification', async () => {

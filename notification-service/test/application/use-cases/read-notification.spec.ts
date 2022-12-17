@@ -1,7 +1,7 @@
+import { NotificationNotFoundError } from '@application/use-cases/errors/notification-not-found-error';
+import { ReadNotification } from '@application/use-cases/read-notification';
 import { InMemoryNotificationsRepository } from '@test/repositories/in-memory-notifications-repository';
-import { NotificationNotFoundError } from './errors/notification-not-found-error';
-import { makeNotification } from '@test/factories/notification-factory';
-import { ReadNotification } from './read-notification';
+import { makeNotification } from '@factories/notification-factory';
 
 describe('Read notification', () => {
    it('should be able to read a notification', async () => {

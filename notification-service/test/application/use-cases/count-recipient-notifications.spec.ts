@@ -1,6 +1,6 @@
+import { CountRecipientNotifications } from '@application/use-cases/count-recipient-notification';
 import { InMemoryNotificationsRepository } from '@test/repositories/in-memory-notifications-repository';
-import { CountRecipientNotifications } from './count-recipient-notification';
-import { makeNotification } from '@test/factories/notification-factory';
+import { makeNotification } from '@factories/notification-factory';
 
 describe('Count recipient notifications', () => {
    it('should be able to count recipient notifications', async () => {
